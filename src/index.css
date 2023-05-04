@@ -17,3 +17,26 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    background-color: unset;
+}
+
+.button {
+    padding: 15px 30px;
+    border-radius: 62px;
+    font-size: 22px;
+    line-height: 140%;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ff4948;
+    background-color: #fff;
+}
