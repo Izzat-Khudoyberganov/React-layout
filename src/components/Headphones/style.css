@@ -1,0 +1,23 @@
+.headphone-wrapper {
+    width: 100%;
+    margin-block: 100px;
+}
+
+.headphone-info {
+    max-width: 460px;
+    width: 100%;
+    text-align: left;
+}
+
+.headphone-properties {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.headphone-properties__box {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}

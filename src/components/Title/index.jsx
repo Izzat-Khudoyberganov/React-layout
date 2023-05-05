@@ -1,8 +1,9 @@
 import React from "react";
+import classNames from "classnames";
 import "./style.css";
 
-const Title = ({ test }) => {
-    return <h2 className='title'>{test}</h2>;
+const Title = ({ text, position }) => {
+    return <h2 className={classNames("title", position && "left")}>{text}</h2>;
 };
 
 export default Title;
