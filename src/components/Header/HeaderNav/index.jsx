@@ -6,24 +6,29 @@ import search from "../../../assets/image/search.png";
 import cart from "../../../assets/image/cart.png";
 import user from "../../../assets/image/user-icon.png";
 import burgerMenu from "../../../assets/image/burger.png";
+import { Link } from "react-router-dom";
 
 const HeaderNav = () => {
     return (
         <div className='header-nav'>
             <div className='container'>
                 <div className='content p-20'>
-                    <a href='/' className='logo'>
+                    <Link to='/' className='logo'>
                         <img src={logo} alt='logo' />
-                    </a>
+                    </Link>
                     <nav className='header-nav__nav'>
                         <div className='header-nav__nav-link'>
                             <img src={search} alt='search' />
                         </div>
                         <div className='header-nav__nav-link'>
-                            <img src={cart} alt='search' />
+                            <Link to='/contact'>
+                                <img src={cart} alt='search' />
+                            </Link>
                         </div>
                         <div className='header-nav__nav-link'>
-                            <img src={user} alt='search' />
+                            <Link to='/about'>
+                                <img src={user} alt='search' />
+                            </Link>
                         </div>
                     </nav>
                     <button className='burger-menu'>
