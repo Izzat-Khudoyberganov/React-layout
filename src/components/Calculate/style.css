@@ -1,0 +1,48 @@
+.box {
+    max-width: 700px;
+    width: 100%;
+    margin: 100px auto;
+    background-color: blueviolet;
+    padding: 100px;
+}
+
+.box-elements {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.count,
+.operator {
+    font-size: 36px;
+    line-height: 100%;
+    color: #fff;
+}
+.count-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.count-btn {
+    padding: 10px 25px;
+    background-color: red;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.increment-btn {
+    background-color: blue;
+}
+
+.result-btn {
+    margin: 0 auto;
+    display: block;
+    background-color: darkslategrey;
+    padding: 15px 50px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}

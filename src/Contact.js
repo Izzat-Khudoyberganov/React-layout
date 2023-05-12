@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./components/Header";
+import Calculate from "./components/Calculate";
 
 const Contact = () => {
     return (
         <>
-            <Header />
+            <Calculate />
         </>
     );
 };
