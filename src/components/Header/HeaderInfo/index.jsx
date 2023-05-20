@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 import hero from "../../../assets/image/hero.png";
@@ -18,7 +19,7 @@ const HeaderInfo = () => {
                             <span className='discount-price'>$ 435</span>
                             <span className='old-price'>$ 465</span>
                         </div>
-                        <button className='button btn-light'>buy now</button>
+                        <button className='button btn-light'></button>
                     </div>
                 </div>
             </div>

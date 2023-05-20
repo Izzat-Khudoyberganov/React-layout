@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 import logo from "../../../assets/image/main-logo.png";
@@ -6,9 +7,8 @@ import search from "../../../assets/image/search.png";
 import cart from "../../../assets/image/cart.png";
 import user from "../../../assets/image/user-icon.png";
 import burgerMenu from "../../../assets/image/burger.png";
-import { Link } from "react-router-dom";
 
-const HeaderNav = () => {
+const HeaderNav = ({ azizbek }) => {
     return (
         <div className='header-nav'>
             <div className='container'>

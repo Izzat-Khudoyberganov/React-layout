@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./style.css";
 
-const Calculate = () => {
+const Calculate = ({ info }) => {
+    console.log(info);
     const [firstCount, setFirstCount] = useState(0);
     const [secondCount, setSecondCount] = useState(0);
     const [result, setResult] = useState(0);

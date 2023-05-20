@@ -5,7 +5,8 @@ import "./style.css";
 
 import headphone from "../../assets/image/headphone.png";
 
-const Headphones = () => {
+const Headphones = ({ info }) => {
+    console.log(info);
     return (
         <section className='headphone-wrapper'>
             <div className='container'>
