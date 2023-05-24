@@ -14,10 +14,9 @@ const Home = () => {
 
     return (
         <>
-            <Header />
-            {/* <Collection info={data} /> */}
+            <Header name={"info"} />
+            <Collection />
             <Headphones info={data} />
-            <p>hiiiii</p>
         </>
     );
 };

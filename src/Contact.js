@@ -3,6 +3,7 @@ import Calculate from "./components/Calculate";
 
 const Contact = () => {
     const [data, setData] = useState(null);
+    const id = 1;
 
     useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/users")
@@ -12,7 +13,7 @@ const Contact = () => {
 
     return (
         <>
-            <Calculate info={data} />
+            <Calculate info={data} name={id} />
         </>
     );
 };

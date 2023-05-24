@@ -4,11 +4,11 @@ import HeaderInfo from "./HeaderInfo";
 
 import "./style.css";
 
-const Header = ({ alisher }) => {
+const Header = ({ alisher, name }) => {
     return (
         <header className='page-header'>
             <HeaderNav azizbek={alisher} />
-            <HeaderInfo />
+            <HeaderInfo name={name} />
         </header>
     );
 };

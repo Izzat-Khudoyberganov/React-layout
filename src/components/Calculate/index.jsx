@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./style.css";
 
-const Calculate = ({ info }) => {
-    console.log(info);
+const Calculate = ({ info, name }) => {
+    console.log(name);
     const [firstCount, setFirstCount] = useState(0);
     const [secondCount, setSecondCount] = useState(0);
     const [result, setResult] = useState(0);
@@ -69,6 +69,7 @@ const Calculate = ({ info }) => {
                     <button className='result-btn' onClick={calculateCount}>
                         Result
                     </button>
+                    <h3 className='id'>{name}</h3>
                 </div>
             </div>
         </div>

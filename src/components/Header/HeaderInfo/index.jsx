@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./style.css";
 
 import hero from "../../../assets/image/hero.png";
 
-const HeaderInfo = () => {
+const HeaderInfo = ({ name }) => {
     return (
         <div className='header-info'>
             <div className='container'>
@@ -19,7 +18,10 @@ const HeaderInfo = () => {
                             <span className='discount-price'>$ 435</span>
                             <span className='old-price'>$ 465</span>
                         </div>
-                        <button className='button btn-light'></button>
+                        <button className='button btn-light'>buy</button>
+                        <a href='' className='name'>
+                            {name}
+                        </a>
                     </div>
                 </div>
             </div>

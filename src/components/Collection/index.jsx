@@ -10,23 +10,12 @@ import "./style.css";
 import { Navigation } from "swiper";
 SwiperCore.use([Autoplay]);
 
-const Collection = ({ info }) => {
-    // const title = info[0].title;
-
-    const person = {
-        name: "Sharifboy",
-        age: 16,
-    };
-
-    const { name, age } = person; /// distruktizatsiya
-
-    const { title, id, userId, completed } = info[0];
-    console.log(title, id);
+const Collection = () => {
     return (
         <section className='collection'>
             <div className='container'>
                 <Title text={"Our Latest colour collection 2021"} />
-                {/* <Swiper
+                <Swiper
                     slidesPerView={3}
                     spaceBetween={30}
                     autoplay={{
@@ -47,13 +36,7 @@ const Collection = ({ info }) => {
                     <SwiperSlide className='swiper-slide'>Slide 7</SwiperSlide>
                     <SwiperSlide className='swiper-slide'>Slide 8</SwiperSlide>
                     <SwiperSlide className='swiper-slide'>Slide 9</SwiperSlide>
-                </Swiper> */}
-                {info.map((el) => (
-                    <div key={el.id}>
-                        <h4>{el.title}</h4>
-                        <input type='checkbox' checked={el.completed} />
-                    </div>
-                ))}
+                </Swiper>
             </div>
         </section>
     );
