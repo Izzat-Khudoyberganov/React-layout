@@ -25,6 +25,14 @@ const headphoneData = [
         link: "Lern More",
         href: "/",
     },
+    {
+        id: 3,
+        image: battery,
+        title: "Microphone",
+        text: "Battery 6.2V-AAC codec",
+        link: "Lern More",
+        href: "/",
+    },
 ];
 
 export default headphoneData;
